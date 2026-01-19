@@ -83,7 +83,7 @@ And then include `taskflow.hpp` as follows:
 
 ```cxx
 // main.cxx
-#include <taskflow.hpp>
+#include <taskflow.hpp>  // or, taskflow/taskflow.hpp
 
 int main() { /* ... */ }
 ```
@@ -91,15 +91,15 @@ int main() { /* ... */ }
 Finally, compile while adding the path `node_modules/taskflow.cxx` to your compiler's include paths.
 
 ```bash
-$ clang++ -I./node_modules/taskflow.cxx main.cxx  # or, use g++
-$ g++     -I./node_modules/taskflow.cxx main.cxx
+$ clang++ -std=c++20 -I./node_modules/taskflow.cxx main.cxx  # or, use g++
+$ g++     -std=c++20 -I./node_modules/taskflow.cxx main.cxx
 ```
 
 You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
 
 ```bash
-$ cpoach clang++ main.cxx  # or, use g++
-$ cpoach g++     main.cxx
+$ cpoach clang++ -std=c++20 main.cxx  # or, use g++
+$ cpoach g++     -std=c++20 main.cxx
 ```
 
 # Start Your First Taskflow Program
