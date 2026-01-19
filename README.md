@@ -1,12 +1,12 @@
-# Taskflow <img align="right" width="10%" src="image/taskflow_logo.png">
+# Taskflow <img align="right" width="10%" src="https://github.com/taskflow/taskflow/blob/master/image/taskflow_logo.png">
 
 <!--[![Linux Build Status](https://travis-ci.com/taskflow/taskflow.svg?branch=master)](https://travis-ci.com/taskflow/taskflow)-->
 [![Ubuntu](https://github.com/taskflow/taskflow/workflows/Ubuntu/badge.svg)](https://github.com/taskflow/taskflow/actions?query=workflow%3AUbuntu)
 [![macOS](https://github.com/taskflow/taskflow/workflows/macOS/badge.svg)](https://github.com/taskflow/taskflow/actions?query=workflow%3AmacOS)
 [![Windows](https://github.com/taskflow/taskflow/workflows/Windows/badge.svg)](https://github.com/taskflow/taskflow/actions?query=workflow%3AWindows)
-[![Wiki](image/api-doc.svg)][documentation]
-[![TFProf](image/tfprof.svg)](https://taskflow.github.io/tfprof/)
-[![Cite](image/cite-tpds.svg)][TPDS22]
+[![Wiki](https://github.com/taskflow/taskflow/blob/master/image/api-doc.svg)][documentation]
+[![TFProf](https://github.com/taskflow/taskflow/blob/master/image/tfprof.svg)](https://taskflow.github.io/tfprof/)
+[![Cite](https://github.com/taskflow/taskflow/blob/master/image/cite-tpds.svg)][TPDS22]
 
 Taskflow helps you quickly write task-parallel programs using modern C++
 
@@ -14,7 +14,7 @@ Taskflow helps you quickly write task-parallel programs using modern C++
 
 Taskflow is faster, more expressive, and easier to integrate than many existing task programming frameworks when handling complex parallel workloads.
 
-![](image/performance.png)
+![](https://github.com/taskflow/taskflow/blob/master/image/performance.png)
 
 Taskflow lets you quickly implement task decomposition strategies
 that incorporate both regular and irregular compute patterns,
@@ -22,7 +22,7 @@ together with an efficient *work-stealing* scheduler to optimize your multithrea
 
 | [Static Tasking](#start-your-first-taskflow-program) | [Subflow Tasking](#create-a-subflow-graph) |
 | :------------: | :-------------: |
-| ![](image/static_graph.svg) | <img align="right" src="image/dynamic_graph.svg" width="100%"> |
+| ![](https://github.com/taskflow/taskflow/blob/master/image/static_graph.svg) | <img align="right" src="https://github.com/taskflow/taskflow/blob/master/image/dynamic_graph.svg" width="100%"> |
 
 Taskflow supports conditional tasking for you to make rapid control-flow decisions
 across dependent tasks to implement cycles and conditions that were otherwise difficult to do
@@ -30,7 +30,7 @@ with existing tools.
 
 | [Conditional Tasking](#integrate-control-flow-to-a-task-graph) |
 | :-----------------: |
-| ![](image/condition.svg) |
+| ![](https://github.com/taskflow/taskflow/blob/master/image/condition.svg) |
 
 Taskflow is composable. You can create large parallel graphs through
 composition of modular and reusable blocks that are easier to optimize
@@ -38,7 +38,7 @@ at an individual scope.
 
 | [Taskflow Composition](#compose-task-graphs) |
 | :---------------: |
-|![](image/framework.svg)|
+|![](https://github.com/taskflow/taskflow/blob/master/image/framework.svg)|
 
 Taskflow supports heterogeneous tasking for you to
 accelerate a wide range of scientific computing applications
@@ -46,14 +46,14 @@ by harnessing the power of CPU-GPU collaborative computing.
 
 | [Concurrent CPU-GPU Tasking](#offload-a-task-to-a-gpu) |
 | :-----------------: |
-| ![](image/cudaflow.svg) |
+| ![](https://github.com/taskflow/taskflow/blob/master/image/cudaflow.svg) |
 
 
 Taskflow provides visualization and tooling needed for profiling Taskflow programs.
 
 | [Taskflow Profiler](https://taskflow.github.io/tfprof) |
 | :-----------------: |
-| ![](image/tfprof.png) |
+| ![](https://github.com/taskflow/taskflow/blob/master/image/tfprof.png) |
 
 We are committed to support trustworthy developments for both academic and industrial research projects
 in parallel computing. Check out [Who is Using Taskflow](https://taskflow.github.io/#tag_users) and what our users say:
@@ -69,7 +69,7 @@ See a quick poster presentation below and
 visit the [documentation][documentation] to learn more about Taskflow.
 Technical details can be referred to our [IEEE TPDS paper][TPDS22].
 
-![](image/taskflow-poster.png)
+![](https://github.com/taskflow/taskflow/blob/master/image/taskflow-poster.png)
 
 # Installation
 
@@ -138,7 +138,7 @@ int main(){
 
 Taskflow is *header-only* and there is no wrangle with installation.
 To compile the program, clone the Taskflow project and
-tell the compiler to include the [headers](./taskflow/).
+tell the compiler to include the [headers](https://github.com/taskflow/taskflow/blob/master/taskflow/).
 
 ```bash
 ~$ git clone https://github.com/taskflow/taskflow.git  # clone it only once
@@ -157,7 +157,7 @@ Taskflow comes with a built-in profiler,
 for you to profile and visualize taskflow programs
 in an easy-to-use web-based interface.
 
-![](doxygen/images/tfprof.png)
+![](https://github.com/taskflow/taskflow/blob/master/doxygen/images/tfprof.png)
 
 ```bash
 # run the program with the environment variable TF_ENABLE_PROFILER enabled
@@ -177,7 +177,7 @@ and visualize it using a number of free [GraphViz][GraphViz] tools.
 taskflow.dump(std::cout);
 ```
 
-<p align="center"><img src="doxygen/images/simple.svg"></p>
+<p align="center"><img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/simple.svg"></p>
 
 # Express Task Graph Parallelism
 
@@ -224,7 +224,7 @@ A.precede(B, C);  // A runs before B and C
 D.succeed(B, C);  // D runs after  B and C
 ```
 
-<p align="center"><img src="doxygen/images/subflow_join.svg"></p>
+<p align="center"><img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/subflow_join.svg"></p>
 
 ## Integrate Control Flow to a Task Graph
 
@@ -247,7 +247,7 @@ init.precede(cond);
 cond.precede(cond, stop);
 ```
 
-<p align="center"><img src="doxygen/images/conditional-tasking-1.svg"></p>
+<p align="center"><img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/conditional-tasking-1.svg"></p>
 
 
 ## Offload a Task to a GPU
@@ -280,7 +280,7 @@ tf::Task cudaflow = taskflow.emplace([&]() {
 }).name("CUDA Graph Task");
 ```
 
-<p align="center"><img src="doxygen/images/saxpy_1_cudaflow.svg"></p>
+<p align="center"><img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/saxpy_1_cudaflow.svg"></p>
 
 ## Compose Task Graphs
 
@@ -312,7 +312,7 @@ f1_module_task.succeed(f2A, f2B)
               .precede(f2C);
 ```
 
-<p align="center"><img src="doxygen/images/composition.svg"></p>
+<p align="center"><img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/composition.svg"></p>
 
 ## Launch Asynchronous Tasks
 
@@ -441,14 +441,14 @@ the following organizations for sponsoring the Taskflow project!
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
 |:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="doxygen/images/utah-ece-logo.png">|<img src="doxygen/images/nsf.png"> | <img src="doxygen/images/darpa.png"> | <img src="doxygen/images/NumFocus.png">|
-|<img src="doxygen/images/nvidia-logo.png"> | <img src="doxygen/images/uw-madison-ece-logo.png"> | | |
+|<img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/utah-ece-logo.png">|<img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/nsf.png"> | <img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/darpa.png"> | <img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/NumFocus.png">|
+|<img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/nvidia-logo.png"> | <img src="https://github.com/taskflow/taskflow/blob/master/doxygen/images/uw-madison-ece-logo.png"> | | |
 
 [Taskflow](https://ads.fund/token/0xadf8c696719c904923504683d3f3f7d18774ac06) project is also supported by ADS.FUND.
 
 # License
 
-Taskflow is licensed with the [MIT License](./LICENSE).
+Taskflow is licensed with the [MIT License](https://github.com/taskflow/taskflow/blob/master/LICENSE).
 You are completely free to re-distribute your work derived from Taskflow.
 
 * * *
