@@ -71,6 +71,37 @@ Technical details can be referred to our [IEEE TPDS paper][TPDS22].
 
 ![](image/taskflow-poster.png)
 
+# Installation
+
+Run:
+
+```bash
+$ npm i taskflow.cxx
+```
+
+And then include `taskflow.hpp` as follows:
+
+```cxx
+// main.cxx
+#include <taskflow.hpp>
+
+int main() { /* ... */ }
+```
+
+Finally, compile while adding the path `node_modules/taskflow.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -I./node_modules/taskflow.cxx main.cxx  # or, use g++
+$ g++     -I./node_modules/taskflow.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ main.cxx  # or, use g++
+$ cpoach g++     main.cxx
+```
+
 # Start Your First Taskflow Program
 
 The following program (`simple.cpp`) creates a taskflow of four tasks
@@ -156,6 +187,7 @@ embeds in-graph control flow.
 
 - [Taskflow ](#taskflow-)
 - [Why Taskflow?](#why-taskflow)
+- [Installation](#installation)
 - [Start Your First Taskflow Program](#start-your-first-taskflow-program)
 - [Visualize Your First Taskflow Program](#visualize-your-first-taskflow-program)
 - [Express Task Graph Parallelism](#express-task-graph-parallelism)
@@ -443,3 +475,12 @@ You are completely free to re-distribute your work derived from Taskflow.
 [email me]:              mailto:twh760812@gmail.com
 [Cpp Conference 2018]:   https://github.com/CppCon/CppCon2018
 [TPDS22]:                https://tsung-wei-huang.github.io/papers/tpds21-taskflow.pdf
+
+<br>
+<br>
+
+
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/taskflow/taskflow)
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/taskflow.cxx)
