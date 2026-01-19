@@ -1,27 +1,28 @@
 {
-  "name": "httplib.cxx",
-  "version": "1.2025.12",
-  "description": "A C++ header-only HTTP/HTTPS server and client library; yhirose (2012).",
+  "name": "taskflow.cxx",
+  "version": "4.2026.1",
+  "description": "A General-purpose Task-parallel Programming System using Modern C++; Tsung-Wei Huang (2018).",
   "keywords": [
-    "c",
+    "c++",
     "library",
-    "http",
-    "https",
-    "server",
-    "client",
-    "header-only"
+    "taskflow",
+    "parallel",
+    "concurrency",
+    "multithreading",
+    "task graph",
+    "thread pool"
   ],
-  "homepage": "https://github.com/nodef/httplib.cxx#readme",
+  "homepage": "https://github.com/nodef/taskflow.cxx#readme",
   "bugs": {
-    "url": "https://github.com/nodef/httplib.cxx/issues"
+    "url": "https://github.com/nodef/taskflow.cxx/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/httplib.cxx.git"
+    "url": "git+https://github.com/nodef/taskflow.cxx.git"
   },
   "license": "MIT",
   "author": "wolfram77@gmail.com",
-  "main": "httplib.h",
+  "main": "taskflow.hpp",
   "scripts": {
     "test": "bash build.sh test"
   }
